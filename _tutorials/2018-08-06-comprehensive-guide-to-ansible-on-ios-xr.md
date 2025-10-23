@@ -206,7 +206,7 @@ The choice between network_cli and netconf connection should be made based on do
 ## Directory structure
 
 
-All playbooks mentioned in tutorial, available on [Github](https://github.com/Maikor/Ansible-2.5-on-IOS-XR). In Github repo Vagrant folder included, feel free to practice against IOS-XRv image Request it [here](https://xrdocs.io/getting-started/steps-download-iosxr-vagrant). 
+All playbooks mentioned in tutorial, available on [Github](https://github.com/Maikor/Ansible-2.5-on-IOS-XR). In Github repo Vagrant folder included, feel free to practice against IOS-XRv image Request it [here]({{site.url}}/getting-started/steps-download-iosxr-vagrant). 
 {: .notice--info}  
 
 Here is the layout for ansible-playbooks.
@@ -250,7 +250,7 @@ Folder content:
 
 ### Hosts file
 
-We need to define the hosts first. There is a separation of variables from host definition in ini file. In provided example, passwords stored in plain text. To avoid it, [Ansible Vault](https://xrdocs.io/application-hosting/tutorials/2018-08-06-comprehensive-guide-to-ansible-on-ios-xr#ansible-vault) should be used and will be covered later in this tutorial. Another mechanism - [passwordless authentication](https://xrdocs.io/application-hosting/tutorials/2018-08-06-comprehensive-guide-to-ansible-on-ios-xr/#key-based-authentication-to-ios-xr-device), based on keys.
+We need to define the hosts first. There is a separation of variables from host definition in ini file. In provided example, passwords stored in plain text. To avoid it, [Ansible Vault]({{site.url}}/application-hosting/tutorials/2018-08-06-comprehensive-guide-to-ansible-on-ios-xr#ansible-vault) should be used and will be covered later in this tutorial. Another mechanism - [passwordless authentication]({{site.url}}/application-hosting/tutorials/2018-08-06-comprehensive-guide-to-ansible-on-ios-xr/#key-based-authentication-to-ios-xr-device), based on keys.
 
 
 <div class="highlighter-rouge">

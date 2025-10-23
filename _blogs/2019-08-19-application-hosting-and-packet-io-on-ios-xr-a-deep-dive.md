@@ -24,7 +24,7 @@ excerpt: >-
 
 # Application-hosting and Packet-IO on IOS-XR 6.X
 
-For readers looking to get hands-on with application-hosting on IOS-XR - bringing up native, lxc or docker applications on IOS-XR plaforms - check out the [xr-toolbox](https://xrdocs.io/application-hosting/tags/#xr-toolbox) series. The goal of this series is to get an unintiated user up and running with simple Linux applications on IOS-XR in a step-by-step manner, enabling them to bring and integrate their own tools and applications. 
+For readers looking to get hands-on with application-hosting on IOS-XR - bringing up native, lxc or docker applications on IOS-XR plaforms - check out the [xr-toolbox]({{site.url}}/application-hosting/tags/#xr-toolbox) series. The goal of this series is to get an unintiated user up and running with simple Linux applications on IOS-XR in a step-by-step manner, enabling them to bring and integrate their own tools and applications. 
 
 While the existing tutorials describe the operative aspect of application-hosting, it is often necessary to elucidate the architecture behind these capabilities so that users can better troubleshoot their applications and plan the resources their applications should acquire post deployment.
 
@@ -259,7 +259,7 @@ Linux applications supported by IOS-XR can be classified into two types:
     There is an obvious red-flag when it comes to native applications that there is no well defined method to constrain the amount of resources (CPU, Memory, Disk) that a native application utilizes on the system.  
     **It is up to the native application itself to police itself in its use of CPU, memory, Disk and other resources on the system**.  
     However, the advantage is the amount of visibility (file system access, XR processes information etc.) that a native application has on the system. This is why most configuration management tool clients (like puppet-client, chef-client, salt-minion are ) end up being native applications. Another example is auditing apps, for example the xr-auditor which actually runs within XR, Admin as well as the Host layer natively:
-    ><https://xrdocs.io/application-hosting/blogs/2018-05-01-anatomy-of-a-network-app-xr-auditor/>
+    ><{{site.url}}/application-hosting/blogs/2018-05-01-anatomy-of-a-network-app-xr-auditor/>
 
 *  **Container applications**: Container applications require a container daemon available to launch the container on an available shared kernel on the system.  The container daemon could be libvirt (LXCs) or the Docker Daemon(Docker Containers).
 
@@ -272,7 +272,7 @@ Linux applications supported by IOS-XR can be classified into two types:
   **The disadvantage** of container based applications is the lack of visibility compared to native applications, but owing to the rich RPC based APIs available with IOS-XR there isn't much that container applications cannot access on the system.   
 
   There are several examples of container applications that have built to operate on IOS-XR: a more recent one is when we ran Facebook's Open/R protocol as a docker application on IOS-XR. You can read more about it here:
-  ><https://xrdocs.io/cisco-service-layer/blogs/2018-02-16-xr-s-journey-to-the-we-b-st-open-r-integration-with-ios-xr/>
+  ><{{site.url}}/cisco-service-layer/blogs/2018-02-16-xr-s-journey-to-the-we-b-st-open-r-integration-with-ios-xr/>
 
 
 ## Understanding Linux Pkt/IO on IOS-XR
@@ -568,7 +568,7 @@ If you've gone through some of the CLI automation labs already, then it must be 
 
 Further, IOS-XR uses the Windriver Linux 7 (WRL7) distribution which is RPM based and also support yum natively for WRL7 applications.  
 You can certainly build your own WRL7 RPMs and install them on the system. This scenario is covered in great detail on xrdocs, here:
-><https://xrdocs.io/application-hosting/tutorials/2016-06-17-xr-toolbox-part-5-running-a-native-wrl7-app/>
+><{{site.url}}/application-hosting/tutorials/2016-06-17-xr-toolbox-part-5-running-a-native-wrl7-app/>
 
 Further, the IOS-XR team also hosts some pre-built libraries for common Linux applications on the Yum repository here:  
 
@@ -988,7 +988,7 @@ Here `sysadmin` corresponds to the admin LXC and `default-sdr--1` corresponds to
 
 Bringing up your own LXC container on IOS-XR is fairly simple, and this has been covered in great detail on xrdocs, here:
 
-><https://xrdocs.io/application-hosting/tutorials/2016-06-16-xr-toolbox-part-4-bring-your-own-container-lxc-app/>  
+><{{site.url}}/application-hosting/tutorials/2016-06-16-xr-toolbox-part-4-bring-your-own-container-lxc-app/>  
 
 We will skip bringing up an LXC container and will leave it as a exercise for the reader based on the blog above.  
 
@@ -1015,7 +1015,7 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 
 There are multiple different techniques that can be used to bring up a docker container on IOS-XR and all of them are discussed in great detail on xrdocs, here:
 
-><https://xrdocs.io/application-hosting/tutorials/2017-02-26-running-docker-containers-on-ios-xr-6-1-2/>
+><{{site.url}}/application-hosting/tutorials/2017-02-26-running-docker-containers-on-ios-xr-6-1-2/>
 
 
 Since docker supports pulling docker images directly from dockerhub over the internet, we can try a quick demonstration. If you already ran through the steps to set up the yum repository and install `iperf` in the native application example above, then your `bash` in the XR LXC must have the following routes:
