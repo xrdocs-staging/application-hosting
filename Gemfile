@@ -5,4 +5,4 @@ gem "jekyll"
 # gem "jekyll-archives"
 gem "wdm"
 gem "html-proofer"
-gem "nokogiri"#, "~> 1.8.2"
+gem "nokogiri", "~> 1.12.0"  # Ruby 2.7 compatible
