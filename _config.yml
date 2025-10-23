@@ -12,7 +12,7 @@ title_short              : "App-Hosting"
 title_separator          : "|"
 name                     : &name "Cisco Systems Inc"
 description              : &description "Documentation, Blogs and Tutorials on the Application Hosting Infrastructure in IOS-XR"
-url                      : "https://xrdocs.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://d101lr0mb7xh5s.cloudfront.net"
 baseurl                  : "/application-hosting" # the subpath of your site, e.g. "/blog"
 gh_repo                  : "https://github.com/xrdocs/application-hosting"
 teaser                   : # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -283,7 +283,7 @@ tags:
 
 
 prose:
-  siteurl: 'https://xrdocs.github.io/application-hosting/'
+  siteurl: 'https://d101lr0mb7xh5s.cloudfront.net/application-hosting/'
   relativeLinks: 'http://prose.github.io/starter/links.jsonp'
   media: 'images'
   ignore:
